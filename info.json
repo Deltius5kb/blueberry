@@ -1,0 +1,9 @@
+{
+  "name": "Sandbox-Logistics",
+  "version": "0.1.0",
+  "title": "Sandbox-Logistics",
+  "author": "_striker",
+  "factorio_version": "1.1",
+  "dependencies": ["base >= 1.1"],
+  "description": "This mod lets you set logistics requests in Sandbox mode. This will teleport items from the logistic network you are standing in into your inventory if you have personal logistics enabled."
+}
