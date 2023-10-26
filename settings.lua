@@ -1,7 +1,7 @@
 -- @Author: striker <armin3600z@gmail.com>
 -- @Date: 2023-10-26 12:29:11
 -- @Last Modified by: striker <armin3600z@gmail.com>
--- @Last Modified time: 2023-10-26 12:46:51
+-- @Last Modified time: 2023-10-26 19:01:02
 
 data:extend({
   {
@@ -19,5 +19,29 @@ data:extend({
     default_value = false,
     localised_name = "Collision",
     localised_description = "If enabled, the player will have collision",
+  },
+  {
+    type = "bool-setting",
+    name = "blueberry-collision-water",
+    setting_type = "startup",
+    default_value = false,
+    localised_name = "Collision with water",
+    localised_description = "If enabled, the player will collide with water",
+  },
+  {
+    type = "bool-setting",
+    name = "blueberry-collision-object",
+    setting_type = "startup",
+    default_value = false,
+    localised_name = "Collision with objects",
+    localised_description = "If enabled, the player will collide with objects",
+  },
+  {
+    type = "bool-setting",
+    name = "blueberry-collision-train",
+    setting_type = "startup",
+    default_value = false,
+    localised_name = "Collision with trains",
+    localised_description = "If enabled, the player will collide with trains",
   },
 })
