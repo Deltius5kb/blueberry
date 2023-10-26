@@ -1,7 +1,7 @@
 -- @Author: striker <armin3600z@gmail.com>
 -- @Date: 2023-10-26 11:20:58
 -- @Last Modified by: striker <armin3600z@gmail.com>
--- @Last Modified time: 2023-10-26 18:42:08
+-- @Last Modified time: 2023-10-26 18:48:25
 
 local character = data.raw["character"]["character"]
 
