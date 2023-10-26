@@ -1,3 +1,3 @@
 # Sandbox Logistics
 
-This is simply a mod that lets you set logistics requests and get them instantly delivered to you in sandbox mode.
+This is a mod that lets you play similar to sandbox mode, you have no character sprite or collision (configurable). Dependencies are highly recommended but not needed. 
