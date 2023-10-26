@@ -1,7 +1,7 @@
 -- @Author: striker <armin3600z@gmail.com>
 -- @Date: 2023-10-26 11:20:58
 -- @Last Modified by: striker <armin3600z@gmail.com>
--- @Last Modified time: 2023-10-26 11:37:38
+-- @Last Modified time: 2023-10-26 12:19:11
 
 local character = data.raw["character"]["character"]
 
@@ -10,3 +10,14 @@ character.collision_box = { { 0, 0 }, { 0, 0 } }
 
 -- Remove sprite
 --  Sets filenames of animations to an empty png
+
+local properties = require("minimal-no-base-mod.properties")
+for q = 1, #character.animations do
+  character.animations[q] = {
+    idle = properties.rotated_animation(),
+    idle_with_gun = properties.rotated_animation(),
+    running = properties.rotated_animation(),
+    running_with_gun = properties.rotated_sprite_custom_direction_count(18),
+    mining_with_tool = properties.rotated_animation(),
+  }
+end
