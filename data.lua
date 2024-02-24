@@ -34,11 +34,11 @@ if not settings.startup["blueberry-character-visible"].value then
 	local properties = require("minimal-no-base-mod.properties")
 	for q = 1, #character.animations do
 		character.animations[q] = {
-			idle = properties.rotated_animation(),
-			idle_with_gun = properties.rotated_animation(),
-			running = properties.rotated_animation(),
-			running_with_gun = properties.rotated_sprite_custom_direction_count(18),
-			mining_with_tool = properties.rotated_animation(),
+			idle = properties.rotated_animation_custom_animation_speed(character.animations[q].idle),
+			idle_with_gun = properties.rotated_animation_custom_animation_speed(character.animations[q].idle_with_gun),
+			running = properties.rotated_animation_custom_animation_speed(character.animations[q].running),
+			running_with_gun = properties.rotated_sprite_custom_direction_count_and_animation_speed(18, character.animations[q].running_with_gun),
+			mining_with_tool = properties.rotated_animation_custom_animation_speed(character.animations[q].mining_with_tool),
 		}
 	end
 end
