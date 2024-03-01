@@ -75,4 +75,23 @@ properties.rotated_animation = function()
   animation.direction_count = 1
   return animation
 end
+properties.rotated_animation_custom_animation_speed = function(rotated_animation)
+  local animation = properties.animation()
+  animation.direction_count = 1
+  animation.animation_speed = properties.get_animation_speed(rotated_animation)
+  return animation
+end
+properties.rotated_sprite_custom_direction_count_and_animation_speed = function(direction_count, rotated_animation)
+  local sprite = properties.sprite()
+  sprite.filename = properties.sprite_filename_32px
+  sprite.direction_count = direction_count
+  sprite.animation_speed = properties.get_animation_speed(rotated_animation)
+  return sprite
+end
+properties.get_animation_speed = function(rotated_animation)
+  if (rotated_animation['layers'] ~= nil) then
+    rotated_animation = rotated_animation.layers[1]
+  end
+  return rotated_animation.animation_speed / rotated_animation.frame_count
+end
 return properties
