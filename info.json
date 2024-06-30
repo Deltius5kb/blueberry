@@ -1,14 +1,13 @@
 {
   "name": "Sandbox-Emulator",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "title": "Sandbox Emulator",
-  "author": "_striker",
+  "author": "deltius",
   "factorio_version": "1.1",
   "dependencies": [
-    "base >= 1.1",
     "Kux-ZoomRunning",
     "far-reach",
     "?bobwarfare"
   ],
-  "description": "This is a mod that lets you play similar to sandbox mode, you have no character sprite or collision (configurable). Dependencies are highly recommended but not needed. Does not work well with exoskeletons"
+  "description": "This is a mod that lets you play similar to sandbox mode, you have no character sprite or collision (configurable)"
 }

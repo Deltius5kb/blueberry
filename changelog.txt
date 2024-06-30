@@ -1,15 +1,18 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.9
-Date: ????
+Version: 0.1.10
+Date: 2024-6-30
+Date: 2023-11-21
   Changes:
+    - Fixed outdated mod description
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 2024-3-1
+Date: 2023-11-21
+  Changes:
+    - Removed footstep noises thanks to github contribution (linked on mod page)
+---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 2023-11-21
   Changes:
     - Added compatibility with bob's warfare
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.7
-Date: ????
-  Changes:
-Version: 0.1.6
-Date: 2023-10-28
-Added belt collision option
